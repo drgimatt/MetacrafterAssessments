@@ -16,11 +16,12 @@ Assessment Requirements
 
 const NFTs = []
 
-function mintNFT (_name, _eyeColor, _shirtType, _shoeType, _bling) {
+function mintNFT (_name, _eyeColor, _shirtType, _bottomType, _shoeType, _bling) {
   const NFT = {
       "name": _name,
       "eyeColor": _eyeColor,
       "shirtType": _shirtType,
+      "bottomType": _bottomType,
       "shoeType": _shoeType,
       "bling": _bling
   }
@@ -39,6 +40,7 @@ function listNFTs () {
     console.log("Name: \t\t" + NFTs[i].name)
     console.log("Eye Color: \t" + NFTs[i].eyeColor)
     console.log("Shirt Type: \t" + NFTs[i].shirtType)
+    console.log("Bottom Type: \t" + NFTs[i].bottomType)
     console.log("Shoe Type: \t" + NFTs[i].shoeType)
     console.log("Bling: \t\t" + NFTs[i].bling)
   }
@@ -52,10 +54,10 @@ function getTotalSupply() {
 
 // call your functions below this line
 
-mintNFT("Andrei","Blue","Hoodie","Slip-on","Gold Chain");
-mintNFT("Robert","Green","T-Shirt","Highcut","Tattoos");
-mintNFT("Luna","Red","Sando","Wedges","Piercings");
-mintNFT("Mary","Orange","Long Sleeves","Lowcut","Gold Glasses");
-mintNFT("Simon","Black","Turtle Neck","Boots","Silver Chain");
+mintNFT("Andrei","Blue","Hoodie","Shorts","Slip-on","Gold Chain");
+mintNFT("Robert","Green","T-Shirt","Jeans","Highcut","Tattoos");
+mintNFT("Luna","Red","Sando","Leggings","Wedges","Piercings");
+mintNFT("Mary","Orange","Long Sleeves","Slacks","Lowcut","Gold Glasses");
+mintNFT("Simon","Black","Turtle Neck","Jogging Pants","Boots","Silver Chain");
 listNFTs();
 getTotalSupply();
