@@ -41,7 +41,6 @@ function listNFTs () {
     console.log("Shirt Type: \t" + NFTs[i].shirtType)
     console.log("Shoe Type: \t" + NFTs[i].shoeType)
     console.log("Bling: \t\t" + NFTs[i].bling)
-    // console.log(NFTs[i]);
   }
 
 }
