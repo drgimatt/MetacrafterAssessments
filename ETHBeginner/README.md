@@ -1,13 +1,10 @@
-# Getting Started with Solidity - Challenge
+# Getting Started with Solidity - Project
 
-Simple overview of use/purpose.
+This contains the necessary files for the project under ETH PROOF: Beginner EVM Course by Metacrafters.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
-
-
-
+This repository contains a .sol file which contains Solidity code which is written to adhere to the requirements specified in the Project page for "ETH PROOF: Beginner EVM Course"
 
 ## License
 
