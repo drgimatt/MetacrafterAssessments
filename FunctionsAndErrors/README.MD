@@ -1,41 +1,11 @@
-# Project Title
+# Functions and Errors - ETH + AVAX
 
-Simple overview of use/purpose.
+This contains the necessary files for the module project Functions and Errors - ETH + AVAX under the ETH + AVAX PROOF: Intermediate EVM Course by Metacrafters.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
-
-## Getting Started
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
-
-## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
+This repository contains a .sol file which contains Solidity code that is written to adhere to the requirements specified in the Project page for "Functions and Errors - ETH + AVAX". It is written to use variables, functions, and error handling functions. The smart contract allows the owner to set a specified value and make a comparison whether if the number in question is equal to the initially set value.
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
