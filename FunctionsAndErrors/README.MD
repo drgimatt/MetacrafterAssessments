@@ -22,6 +22,8 @@ This contract is written in Solidity, as such, it can be run by any IDE that is 
 
 On the Remix website, create a new file by clicking the "+" icon on the left-hand sidebar and save the file with a .sol extension. Copy and paste the code into the file. To compile the code, click the compiler tab on the left-hand sidebar and set the compiler version to the version specified on the file and click "Compile".
 
+### Running the Contract
+
 To deploy the contract, click the "Deploy & Run Transactions" tab in the left-hand sidebar, select the contract and press "Deploy". Once deployed, an instance would be created and the various functions implemented on the contract can now be interacted with.
 
 ## Author
