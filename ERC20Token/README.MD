@@ -9,7 +9,7 @@ This repository contains a .sol file which contains Solidity code which is writt
 ## Usage
 
 To run the project, the easiest means of doing so is using the Remix IDE. 
-Link: remix.ethereum.org
+Link: https://remix.ethereum.org
 
 ## License
 
