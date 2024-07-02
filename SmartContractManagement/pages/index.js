@@ -9,6 +9,8 @@ export default function HomePage() {
   const [balance, setBalance] = useState(undefined);
   const [ownerAddress, setOwnerAddress] = useState(undefined);
   const [transactionHistory, setTransactionHistory] = useState([]);
+  const [multiplier, setMultiplier] = useState(1);
+  const [divisor, setDivisor] = useState(1);
 
   const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
   const atmABI = atm_abi.abi;
@@ -76,19 +78,37 @@ export default function HomePage() {
     }
   }
 
-  const showAddress = async () => {
-    if (atm) {
-      const ownerAddress = await atm.owner();
-      setOwnerAddress(ownerAddress);
-    }
-  }
-
   const getTransactionHistory = async () => {
     if (atm) {
       const history = await atm.getTransactionHistory(account[0]);
       setTransactionHistory(history);
     }
   }
+
+  const multiplyBalance = async () => {
+    if (atm) {
+      try {
+        const tx = await atm.multiplyBalance(multiplier); 
+        await tx.wait();
+        getBalance();
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  };
+
+
+  const divideBalance = async () => {
+    if (atm) {
+      try {
+        const tx = await atm.divideBalance(divisor); 
+        await tx.wait();
+        getBalance();
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  };
 
   const initUser = () => {
     // Check to see if user has Metamask
@@ -109,8 +129,18 @@ export default function HomePage() {
       <div>
         <p>Account: {account}</p>
         <p>Balance: {balance} ETH</p>
-        <button onClick={deposit}>Deposit 1 ETH</button>
-        <button onClick={withdraw}>Withdraw 1 ETH</button>
+        {/* <button onClick={deposit}>Deposit 1 ETH</button>
+        <button onClick={withdraw}>Withdraw 1 ETH</button> */}
+        <div>
+          <label>Multiply by: </label>
+          <input type="number" value={multiplier} onChange={(e) => setMultiplier(e.target.value)} />
+          <button onClick={multiplyBalance}>Multiply</button>
+        </div>
+        <div>
+          <label>Divide by: </label>
+          <input type="number" value={divisor} onChange={(e) => setDivisor(e.target.value)} />
+          <button onClick={divideBalance}>Divide</button>
+        </div>
         <button onClick={getTransactionHistory}>Get Transaction History</button>
         {ownerAddress && <p>Owner Address: {ownerAddress}</p>}
         {transactionHistory.length > 0 && (
@@ -133,7 +163,7 @@ export default function HomePage() {
 
   return (
     <main className="container">
-      <header><h1>Welcome to an Etherium ATM!</h1></header>
+      <header><h1>Welcome to an Localhost ATM!</h1></header>
       {initUser()}
       <style jsx>{`
         .container {
