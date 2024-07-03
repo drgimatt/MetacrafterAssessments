@@ -129,8 +129,6 @@ export default function HomePage() {
       <div>
         <p>Account: {account}</p>
         <p>Balance: {balance} ETH</p>
-        {/* <button onClick={deposit}>Deposit 1 ETH</button>
-        <button onClick={withdraw}>Withdraw 1 ETH</button> */}
         <div>
           <label>Multiply by: </label>
           <input type="number" value={multiplier} onChange={(e) => setMultiplier(e.target.value)} />
