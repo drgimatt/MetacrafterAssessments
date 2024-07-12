@@ -23,10 +23,12 @@ This contract is written in Solidity, as such, it can be run by any IDE that is 
 
 ### Running the Contract (via Remix)
 
-To run the project, fork the project and on the project's directory, open a terminal and run the command "remixd". Open Remix and select the "File Explorer" tab. Under the "Workspaces", choose and select the "connect to localhost". Click "Connect". Under the "Solidity compiler" tab, click the Compile button. Switch to the "Deploy & run transactions" tab. Under the "Environment", select the "Injected Provider - Metamask". Check the metamask wallet and see if connected to the Avalanche Fuji Testnet. To deploy, press the "Deploy" button. Beside at the "At Address" button, paste the code below and click the button.
+To run the project, fork the project and on the project's directory, open a terminal and run the command `remixd`. Open Remix and select the "File Explorer" tab. Under the "Workspaces", choose and select the "connect to localhost". Click "Connect". Under the "Solidity compiler" tab, click the Compile button. Switch to the "Deploy & run transactions" tab. Under the "Environment", select the "Injected Provider - Metamask". Check the metamask wallet and see if connected to the Avalanche Fuji Testnet. To deploy, press the "Deploy" button. Beside at the "At Address" button, paste the code below and click the button.
 
 My Deployed Contract:
 `0xFF0032671020925226233EDDD8d402572f123D0E`
+
+If you want to deploy your own contract instead, on a different terminal run this command and copy the address provided: `npx hardhat run scripts/deploy.js --network fuji`
 
 ## Author
 
