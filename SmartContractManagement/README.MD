@@ -4,12 +4,12 @@ This contains the necessary files for the module project Smart Contract Manageme
 
 ## Description
 
-This repository contains a .sol file which contains Solidity code that is written to adhere to the requirements specified in the Project page for "Smart Contract Management - ETH + AVAX". It is written to use variables, functions, events, and error handling functions. The smart contract allows the owner to make transactions at an amount of 1 ETH to an account as well as to see the transactions made throughout. This allows learners to understand how such different pieces of programs would interact and integrate with each other.
+This repository contains a .sol file which contains Solidity code that is written to adhere to the requirements specified in the Project page for "Smart Contract Management - ETH + AVAX". It is written to use variables, functions, events, and error handling functions. The smart contract allows the owner to make transactions at a specified rate as well as to see the transactions made throughout. This allows learners to understand how such different pieces of programs would interact and integrate with each other.
 
 ## Features
 
-- Deposit 1 ETH to the selected account
-- Withdraw 1 ETH to the selected account
+- Multiply the balance at a specified multiplier
+- Divide the balance at a specified divisor
 - Get a transaction history for the account in question
 
 ## Getting Started
