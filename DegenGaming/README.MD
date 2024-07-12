@@ -4,9 +4,7 @@ This contains the necessary files for the module project Degen Token (ERC-20): U
 
 ## Description
 
-This repository contains a .sol file which contains Solidity code that is written to adhere to the requirements specified in the Project page for "Degen Token (ERC-20): Unlocking the Future of Gaming". It is written to use variables, functions, events, and error handling functions. 
-
-The smart contract allows the owner to create new tokens that can be distributed to other players, transfer tokens from one person to another, redeem tokens in the store, check the token balance, and burn a certain amount of tokens.
+This repository contains a .sol file which contains Solidity code that is written to adhere to the requirements specified in the Project page for "Degen Token (ERC-20): Unlocking the Future of Gaming". It is written to use variables, functions, events, and error handling functions. The smart contract allows the owner to create new tokens that can be distributed to other players, transfer tokens from one person to another, redeem tokens in the store, check the token balance, and burn a certain amount of tokens.
 
 ## Features
 
@@ -23,20 +21,12 @@ The smart contract allows the owner to create new tokens that can be distributed
 
 This contract is written in Solidity, as such, it can be run by any IDE that is configured to use Solidity. Since Hardhat and Metamask are required for this project. It is recommended to use Remix to simplify the process of setting up. To get started, go to https://www.remix.ethereum.org/. 
 
-### Running the Contract (via Gitpod)
+### Running the Contract (via Remix)
 
-To run the project, fork the project on Gitpod open three terminals in the project's directory. In the second terminal, run the command "npx hardhat node", and in the third terminal, run the command "npx hardhat run --network localhost scripts/deploy.js". In the first terminal, start the project by running "npm run dev", and open the url provided in the terminal.
+To run the project, fork the project and on the project's directory, open a terminal and run the command "remixd". Open Remix and select the "File Explorer" tab. Under the "Workspaces", choose and select the "connect to localhost". Click "Connect". Under the "Solidity compiler" tab, click the Compile button. Switch to the "Deploy & run transactions" tab. Under the "Environment", select the "Injected Provider - Metamask". Check the metamask wallet and see if connected to the Avalanche Fuji Testnet. To deploy, press the "Deploy" button. Beside at the "At Address" button, paste the code below and click the button.
 
-### Connecting Metamask to the Contract
-
-Open Metamask and select the "Add Account or Hardware Wallet" option, click the "Import Account" option. In the Second terminal, copy the private key of the very first account mentioned and paste the private key to Metamask and save. In the settings of Metamask, select "Network" and add a new network. Set the following parameters and save.
-
-- Name: Localhost
-- RPC URL: http://127.0.0.1:8545
-- Chain ID: 31337
-- Symbol: ETH
-
-Please ensure that "npx hardhat node" is executed and the RPC url is accessible.
+My Deployed Contract:
+0xFF0032671020925226233EDDD8d402572f123D0E
 
 ## Author
 
