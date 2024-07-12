@@ -19,7 +19,7 @@ This repository contains a .sol file which contains Solidity code that is writte
 
 ### Opening the Contract
 
-This contract is written in Solidity, as such, it can be run by any IDE that is configured to use Solidity. Since Hardhat and Metamask are required for this project. It is recommended to use Remix to simplify the process of setting up. To get started, go to https://www.remix.ethereum.org/. 
+This contract is written in Solidity, as such, it can be run by any IDE that is configured to use Solidity. Since Hardhat and Metamask are required for this project. It is recommended to use Remix to simplify the process of setting up. To get started, go to https://remix.ethereum.org/. 
 
 ### Running the Contract (via Remix)
 
